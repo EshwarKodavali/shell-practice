@@ -1,4 +1,5 @@
 #!/bin/bash
-
-echo "Eshu : hi ishu how are?"
-echo "Ishu : hi eshu, i am fine."
+PERSON1=MANI
+PERSON2=BHARATHI
+echo "$PERSON1 : hi $PERSON2 how are?"
+echo "$PERSON2 : hi $PERSON1, i am fine."
