@@ -5,6 +5,7 @@ if [ $(id -u) -eq 0 ]; then
 else
     echo "Need to run with root access"
     exit
+fi
 
 dnf install mysql -y
 
@@ -12,3 +13,4 @@ if [ $($?) -eq 0 ]; then
     echo "Installation is success"
 else
     echo "Installation is failed"
+fi
