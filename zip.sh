@@ -1,6 +1,6 @@
 #!bin/bash
 source=$1
-Destination=$2
+destination=$2
 days=${3:-14}
 
 if [ $# -lt 2 ]; then
