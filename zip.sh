@@ -9,7 +9,7 @@ if [ $# -lt 2 ]; then
 fi
 
 if [ ! -d $source ]; then
-    echo "source file not foun"
+    echo "source file not found"
     exit 1
 fi
 
