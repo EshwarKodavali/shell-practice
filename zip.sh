@@ -4,6 +4,7 @@ Destination=$2
 days{3:-14}
 if [ $# -lt 2 ]; then
     echo "minimum parameters are 2"
+    exit 1
 fi
 
 if [ ! -d $source ]; then
