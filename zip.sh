@@ -20,7 +20,7 @@ fi
 
 file=$(find $source -name "*.log" -type f -mtime +$days)
 
-if [! -z ${file} ]; then
+if [ ! -z ${file} ]; then
     echo "Log files exits"
     Timestamp=$(date +%F-%H-%M)
     zip_file_name="$DEST_DIR/app-logs-$Timestamp.zip"
