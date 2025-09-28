@@ -24,8 +24,6 @@ if [ ! -z "${file}" ]; then
     echo "Log files exits"
     Timestamp=$(date +%F-%H-%M)
     zip_file_name="$destination/app-logs-$Timestamp.zip"
-    
-     ZIP_FILE_NAME="$DEST_DIR/app-logs-$TIMESTAMP.zip"
     echo "Zip file name: $zip_file_name"
     find $source -name "*.log" -type f -mtime +$days | zip -@ -j "$zip_file_name"
     if [ -f $zip_file_name ]; then
