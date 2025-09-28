@@ -1,7 +1,8 @@
 #!bin/bash
 source=$1
 Destination=$2
-days{3:-14}
+days=${3:-14}
+
 if [ $# -lt 2 ]; then
     echo "minimum parameters are 2"
     exit 1
